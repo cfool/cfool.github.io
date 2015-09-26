@@ -49,6 +49,7 @@ body {
 .content {
     color:#2c3e50;
     border-right: solid 3px #bdc3c7;
+    margin-bottom: 40px;
 }
 
 .content .post {
