@@ -1,0 +1,19 @@
+{% include header.html %}
+<div class='main'>
+    <div class='row-fluid'>
+        <div class='col-md-12 top'>
+            <div class='col-md-12 basic'>
+            {% include title.html %}
+            </div>
+        </div>
+        <div class='col-md-9 content'>
+        detail page of blog is developing ... click <a href='{{ site.baseUrl }}/'>here</a> to return. 
+        <div style='display:none'> {{ content }}</div>
+        </div>
+        <div class='col-md-3 right'>
+            {% include right.html %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
