@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+    color: #eaeaea;
+    font: 16px;
+    line-height: 1.5;
+    font-family: 'MicroSoft Yahei', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+.main {
+    background-color: #ecf0f1;
+    width:80%;
+    min-width:600px;
+    max-width:800px;
+    min-height:800px;
+    margin: 0 auto;
+    border-left: solid 4px #2c3e50;
+    border-right: solid 4px #2c3e50;
+}
+
+.seprator {
+    height:1px;
+    border:none;
+    border-top:1px solid #555555;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.top {
+    padding: 2px 2px 2px 2px;
+}
+
+.top .basic {
+    background-color: #95a5a6;
+    height: 80px;
+}
+
+.top .basic .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.top .basic .mood {
+    font-size: 10px;
+}
+
+.content {
+    color:#2c3e50;
+    border-right: solid 3px #bdc3c7;
+}
+
+.content .post {
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #7f8c8d;
+    margin-top: 10px;
+}
+
+.content .post .title {
+    font-size:20px;
+}
+.content .post .tags {
+    
+}
+.content .post .excerpt {
+    margin-top: 10px;
+}
