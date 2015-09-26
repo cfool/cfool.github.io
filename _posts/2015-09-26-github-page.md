@@ -37,10 +37,9 @@ tags: []
     jekyll s
 
 ------------------------------
-待续......
-<p/>
-参考文档：
+待续......    
+参考资料：
 
-* Jekyll文档 [http://jekyll.bootcss.com/](http://jekyll.bootcss.com/)
-* liquid用法 [http://blog.csdn.net/dont27/article/details/38097581](http://blog.csdn.net/dont27/article/details/38097581)
-* Markdown语法说明 [http://www.appinn.com/markdown/](http://www.appinn.com/markdown/)
+* Jekyll文档 <http://jekyll.bootcss.com/>
+* liquid用法 <http://blog.csdn.net/dont27/article/details/38097581>
+* Markdown语法说明 <http://www.appinn.com/markdown/>
