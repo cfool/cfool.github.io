@@ -3,7 +3,7 @@ layout: post
 title: "开始搞下github pages"
 author: cfool
 description: ""
-category: 
+category: github
 tags: []
 ---
 

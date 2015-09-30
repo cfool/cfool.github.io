@@ -5,7 +5,7 @@ body {
     color: #eaeaea;
     font: 16px;
     line-height: 1.5;
-    font-family: 'MicroSoft Yahei', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-family: 'MicroSoft Yahei', 微软雅黑, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 .main {
@@ -50,6 +50,7 @@ body {
     color:#2c3e50;
     border-right: solid 3px #bdc3c7;
     margin-bottom: 40px;
+    min-height: 800px;
 }
 
 .content .post {
@@ -65,5 +66,38 @@ body {
     
 }
 .content .post .excerpt {
+    margin-top: 10px;
+}
+
+.right_block {
+    width: 100%;
+    background-color: #eaeaea;
+    margin-bottom: 20px;
+}
+
+.right_block .title{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    color: #eaeaea;
+    background-color: #95a5a6;
+    display: block;
+    padding-left: 20px;
+}
+
+.right_block .substance {
+    width: 100%;
+    color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.right_block .substance a {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.right_block .substance a:first-child {
     margin-top: 10px;
 }

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for category in site.categories %}
+<div id='{{ category | first }}'>
+    {{ category | first }}
+</div>
+{% endfor %}
