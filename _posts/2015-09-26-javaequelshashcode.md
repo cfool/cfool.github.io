@@ -13,6 +13,7 @@ tags: []
 * 如果根据equals(Object)方法，两个对象是相等的，那么在两个对象中的每个对象上调用 hashCode 方法都必须生成相同的整数结果。 
 * 以下情况不是必需的：如果根据 equals(java.lang.Object) 方法，两个对象不相等，那么在两个对象中的任一对象上调用 hashCode 方法必定会生成不同的整数结果。但是，程序员应该知道，为不相等的对象生成不同整数结果可以提高哈希表的性能。
 
+
 *(详细参考[Java Api](http://docs.oracle.com/javase/7/docs/api/) Object类的hashCode方法介绍。)*   
 在实际中，不同的jvm的默认hashCode方法实现方式不同，但是基本上对于不同的对象，返回的hashCode值一般是不相同的。所以，当我们只重写equals方法时，容易产生值相同的对象，hash值却不同的情况。这样与hashCode方法的常规协定是不相符的。这样会导致在很多用到hash值地方会产生错误。   
 看下面的例子：
@@ -116,5 +117,5 @@ _**所以，在重写equals的时候，一定记得要重写hashCode方法。**_
 
 参考资料：
 
-* Ryan的cnblog<http://www.cnblogs.com/rcfeng/p/4030039.html>
-* Java API<http://docs.oracle.com/javase/7/docs/api/>
+* Ryan的cnblog <http://www.cnblogs.com/rcfeng/p/4030039.html>
+* Java API <http://docs.oracle.com/javase/7/docs/api/>

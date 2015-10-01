@@ -1,17 +1,4 @@
 <div class='right_block'>
-    <span class='title'>分类</span>
-    <div class='substance'>
-    {% for category in site.categories %}
-        <a href='{{ site.baseUrl }}/category.html#{{ category | first }}'>
-            {{ category | first }}({{ category | last | size }})
-        </a>
-        {% if forloop.last != true %}
-        <hr class='seprator' />
-        {% endif %}
-    {% endfor %}
-    </div>
-</div>
-<div class='right_block'>
     <span class='title'>归档</span>
     <div class='substance'>
         {% capture count %} {{ 0 }} {% endcapture%}

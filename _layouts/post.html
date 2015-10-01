@@ -1,19 +1,38 @@
 {% include header.html %}
 <div class='main'>
-    <div class='row-fluid'>
+    <div class='row-fluid clearfix'>
         <div class='col-md-12 top'>
             <div class='col-md-12 basic'>
             {% include title.html %}
             </div>
         </div>
         <div class='col-md-9 content'>
-        detail page of blog is developing ... click <a href='{{ site.baseUrl }}/'>here</a> to return. 
-        <div style='display:none'> {{ content }}</div>
+            <div class='post clearfix'>
+                <span class='title'> {{ page.title }} </span>
+                <hr class='seprator' />
+                <div class='top10'> {{ content }}</div>
+                <hr class='seprator' />
+                <div class='span12 top10'>
+                    {% if page.next %}
+                    <div class='span12'>
+                        上一篇&nbsp;&nbsp;<a href='{{ page.next.url }}'>{{ page.next.title }}</a>
+                    </div>
+                    {% endif %}
+                    {% if page.previous %}
+                    <div class='span12'>
+                        下一篇&nbsp;&nbsp;<a href='{{ page.previous.url }}'>{{ page.previous.title }}</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
         </div>
         <div class='col-md-3 right'>
-            {% include right.html %}
+            {% include categorylist.html %}
+            {% include archivelist.html %}
+            {% if page.tags.size > 0 %}
+                {% include taglist.html %}
+            {% endif %}
         </div>
     </div>
 </div>
-
 {% include footer.html %}

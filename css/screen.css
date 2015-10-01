@@ -29,6 +29,10 @@ body {
     margin-bottom: 0;
 }
 
+.top10 {
+    margin-top: 10px;
+}
+
 .top {
     padding: 2px 2px 2px 2px;
 }
@@ -36,6 +40,7 @@ body {
 .top .basic {
     background-color: #95a5a6;
     height: 80px;
+    cursor: pointer;
 }
 
 .top .basic .name {
@@ -62,9 +67,7 @@ body {
 .content .post .title {
     font-size:20px;
 }
-.content .post .tags {
-    
-}
+
 .content .post .excerpt {
     margin-top: 10px;
 }
@@ -100,4 +103,11 @@ body {
 
 .right_block .substance a:first-child {
     margin-top: 10px;
+}
+
+.right_block .substance .tag {
+    cursor: pointer;
+    float: left;
+    background-color: #dadada;
+    display: inline-block;
 }

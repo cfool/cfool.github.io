@@ -9,6 +9,7 @@ tags: []
 
 花费了几天时间搞了下github pages，搭建了本地的jekyll环境，github上创建了对应的repository。然后下载jquery,bootstrap，开始搞自己的Blog模板。记录一下自己的开发过程。
 
+
 ### 创建github page对应的repository
 注册github账号的过程就不说了。注册完成后，登录进去，[创建](https://github.com/new)一个新的repository。Repository name一定要填写 username.github.io，username就是自己在github上的用户名，比如我自己就是cfool.github.io。
 创建完成后，git clone到本地，就可以开始创建自己的模板，写自己的Blog了。
