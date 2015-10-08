@@ -8,12 +8,12 @@
                 {% capture currentTime %} {{ post.date | date: '%h %Y'}} {% endcapture%}
                 {% capture previousTime %} {{ post.previous.date | date: '%h %Y'}} {% endcapture%}
                 {% if previousTime != currentTime %}
-                    <a> {{ post.date | date: '%h %Y' }}({{ count | plus:0 }})</a>
+                    <a href='{{ site.baseUrl }}/archive.html#{{ post.date | date:"%Y%m" }}'> {{ post.date | date: '%h %Y' }}({{ count | plus:0 }})</a>
                     <hr class='seprator' />
                     {% capture count %} {{ 0 }} {% endcapture %}
                 {% endif %}
             {% else %}
-                <a>{{ post.date | date: '%h %Y'}}({{ count | plus:0 }})</a>
+                <a href='{{ site.baseUrl }}/archive.html#{{ post.date | date:"%Y%m" }}'>{{ post.date | date: '%h %Y'}}({{ count | plus:0 }})</a>
             {% endif %}
         {% endfor %}
     </div>
