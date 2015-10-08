@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+    {% if forloop.first %}
+        <div id='{{ post.date | date:'%Y%m'}}' class='archive'>
+            <div class='archive_month'> {{ post.date | date:'%h %Y'}} </div>
+    {% endif %}
+    {% unless post.previous %}
+        {% capture currentTime %} {{ post.date | date: '%h %Y'}} {% endcapture%}
+        {% capture previousTime %} {{ post.previous.date | date: '%h %Y'}} {% endcapture%}
+        {% if previousTime != currentTime %}
+        </div>
+        <div id='{{ post.date | date:'%Y%m'}}' class='archive'>
+            <div class='archive_month'> {{ post.date | date:'%h %Y'}} </div>
+        {% endif %}
+    {% endunless %}
+            <div class='archive_post'>
+                {{ post.date | date:'%m/%d'}}&nbsp;<a href='{{post.url}}' target='_blank'>{{ post.title }}</a>
+            </div>
+    {% if forloop.last %}
+        </div>
+    {% endif %}
+    
+{% endfor %}

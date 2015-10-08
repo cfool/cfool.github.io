@@ -1,3 +1,4 @@
 excerpt_separator: "\n\n\n"
 baseUrl: ''
 exclude: ['personalpage.sublime-project', 'personalpage.sublime-workspace']
+markdown: rdiscount

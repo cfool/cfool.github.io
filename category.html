@@ -3,7 +3,14 @@ layout: default
 ---
 
 {% for category in site.categories %}
-<div id='{{ category | first }}'>
-    {{ category | first }}
+<div id='{{ category | first }}' class='category'>
+    <div class='category_name'>
+        {{ category | first }}
+    </div>
+    {% for post in category.last %}
+        <div class='category_post'>
+        {{ post.date | date: '%Y/%m/%d'}}&nbsp;<a href='{{ post.url }}' target='_blank'>{{ post.title }}</a>
+        </div>
+    {% endfor %}
 </div>
 {% endfor %}

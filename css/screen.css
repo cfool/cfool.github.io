@@ -111,3 +111,32 @@ body {
     background-color: #dadada;
     display: inline-block;
 }
+
+.category {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.category .category_name {
+    font-size:25px;
+}
+
+.category .category_post {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.archive {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.archive .archive_month {
+    font-size:25px;
+}
+
+.archive .archive_post {
+    margin-left: 20px;
+    margin-top: 5px;
+}

@@ -28,14 +28,18 @@ tags: []
 
 #### 安装jekyll
 
-    sudo gem install jekyll
-    sudo gem install rdiscount
+```language-shell
+sudo gem install jekyll
+sudo gem install rdiscount
+```
 
 #### 运行jekyll
     
 在你的代码库下执行
-    
-    jekyll s
+
+```language-shell
+jekyll s
+```
 
 ------------------------------
 待续......    
