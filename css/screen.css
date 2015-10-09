@@ -41,6 +41,7 @@ body {
     background-color: #95a5a6;
     height: 80px;
     cursor: pointer;
+    position: relative;
 }
 
 .top .basic .name {
@@ -139,4 +140,22 @@ body {
 .archive .archive_post {
     margin-left: 20px;
     margin-top: 5px;
+}
+
+
+.subscriber {
+}
+
+
+.icon {
+    margin: auto;
+    display: inline-block;
+    width:15px;
+    height:15px;
+    overflow: hidden;
+    background-image: url(/images/icon.png)
+}
+
+.rss {
+    background-position: -53px -149px;
 }

@@ -10,6 +10,9 @@
         {{ content }}
         </div>
         <div class='col-md-3 right'>
+            <div class='subscriber'>
+                <a href='{{site.baseUrl}}/feed.xml' target='_blank' ><div class='icon rss'></div></a>
+            </div>
             {% include categorylist.html %}
             {% include archivelist.html %}
         </div>

@@ -1,4 +1,6 @@
+name: cfool's blog
+description: '一个软件开发人员的随笔'
 excerpt_separator: "\n\n\n"
-baseUrl: ''
+baseUrl: 'http://cfool.github.io'
 exclude: ['personalpage.sublime-project', 'personalpage.sublime-workspace']
 markdown: rdiscount
